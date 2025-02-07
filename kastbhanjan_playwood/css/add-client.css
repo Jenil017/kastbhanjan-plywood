@@ -1,0 +1,60 @@
+/* add-client.css */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(240, 240, 240, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #8B4513; /* Wood color */
+}
+
+main {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Add margin for spacing */
+}
+
+form input[type="submit"] {
+    background: #8B4513; /* Wood color */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Increased radius for rounded look */
+    padding: 10px 20px; /* Adjusted padding */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform for hover */
+    align-self: center; /* Center the button */
+}
+
+form input[type="submit"]:hover {
+    background: #A0522D; /* Lighter wood color */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.success {
+    color: green;
+    margin: 10px 0;
+    text-align: center;
+}

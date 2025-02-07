@@ -1,0 +1,80 @@
+/* admin.css */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header {
+    background: #8B4513; /* Wood color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+select:focus, input[type="number"]:focus {
+    border-color: #8B4513; /* Focus color */
+}
+
+.deal-info {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #8B4513;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+footer {
+    background: #8B4513; /* Wood color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+
+
+table th {
+    background-color: #8B4513; /* Wood color */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+table tr:hover {
+    background-color: #ddd; /* Highlight row on hover */
+}

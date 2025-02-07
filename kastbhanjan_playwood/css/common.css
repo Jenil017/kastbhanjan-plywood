@@ -1,0 +1,138 @@
+/* common.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h1, h2 {
+    color: #8B4513; /* Wood color */
+}
+
+/* Button Styles */
+.button, input[type="submit"] {
+    background: #8B4513; /* Wood color */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded look */
+    padding: 10px 20px; /* Adjusted padding */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Hover effects */
+    text-align: center;
+    display: inline-block; /* Make it behave like a button */
+    text-decoration: none; /* Remove underline for links */
+    font-size: 16px;
+}
+
+.button:hover, input[type="submit"]:hover {
+    background: #A0522D; /* Lighter wood color */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Error Message */
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Admin Buttons Container */
+.admin-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+/* Base styles for larger screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Media queries for iPhone 12 and 13 portrait */
+@media (max-width: 390px) and (orientation: portrait) {
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .container {
+        padding: 10px; /* Reduce padding */
+    }
+
+    header, footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    form {
+        display: block;
+    }
+
+    select, input[type="number"], input[type="submit"] {
+        width: 100%; /* Full width */
+        padding: 10px; /* Add some padding */
+    }
+
+    .deal-info {
+        margin: 10px 0; /* Adjust spacing */
+    }
+}
+
+/* Media queries for iPhone 12 and 13 landscape */
+@media (max-width: 844px) and (orientation: landscape) {
+    body {
+        font-size: 14px; /* Smaller font size for landscape */
+    }
+
+    .container {
+        padding: 15px; /* Adjust padding */
+    }
+
+    header, footer {
+        text-align: center;
+        padding: 15px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column; /* Stack form elements */
+    }
+
+    select, input[type="number"], input[type="submit"] {
+        width: 100%; /* Full width */
+        padding: 10px; /* Add padding */
+    }
+
+    .deal-info {
+        margin: 15px 0; /* Adjust spacing */
+    }
+}
+
+/* Additional adjustments for very small screens (e.g., below 360px) */
+@media (max-width: 360px) {
+    body {
+        font-size: 12px; /* Even smaller font size */
+    }
+
+    .container {
+        padding: 5px; /* Reduce padding */
+    }
+
+    header, footer {
+        padding: 5px;
+    }
+
+    select, input[type="number"], input[type="submit"] {
+        padding: 8px; /* Smaller padding */
+    }
+}

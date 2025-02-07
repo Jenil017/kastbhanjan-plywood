@@ -1,0 +1,78 @@
+/* login.css */
+.background-image {
+    background: #f0f0f0 url('../images/bg1.jpg') no-repeat center; /* Fallback color */
+    background-size: cover; /* Maintain aspect ratio and cover the area */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.login-container {
+    max-width: 400px;
+    width: 90%; /* Make it responsive */
+    margin: 0 auto; /* Center the container */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px; /* Adjust heading size */
+    color: #333; /* Dark text color */
+}
+
+h2 {
+    font-size: 20px; /* Adjust subheading size */
+    color: #555; /* Lighter text color */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #8B4513; /* Focus color */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #8B4513; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #6f3512; /* Darker button color on hover */
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 400px) {
+    .login-container {
+        margin: 20px; /* Reduce margin for smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller heading */
+    }
+
+    h2 {
+        font-size: 18px; /* Smaller subheading */
+    }
+
+    input[type="text"], input[type="password"], input[type="submit"] {
+        padding: 8px; /* Smaller padding for inputs and button */
+    }
+}
